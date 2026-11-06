@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Syne:wght@400;500;600;700;800&family=Manrope:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Background */
+  --charcoal: #1A1D20;
+
+  /* Ember Architect tokens */
+  --accent-primary: #FF6B35;
+  --accent-hover:   #FF8555;
+  --accent-muted:   #CC5528;
+
+  --text-primary:   #F2E5D7;
+  --text-secondary: #B8A99A;
+  --text-tertiary:  #6B5D53;
+
+  --surface-raised: #2A1F1A;
+  --surface-deep:   #1A130F;
+
+  --border-subtle:  rgba(242, 229, 215, 0.08);
+  --border-default: rgba(242, 229, 215, 0.15);
+  --border-accent:  rgba(255, 107, 53, 0.3);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--charcoal);
+  color: var(--text-primary);
+  font-family: 'Manrope', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Canvas texture overlay */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--charcoal); }
+::-webkit-scrollbar-thumb { background: var(--accent-primary); opacity: 0.5; border-radius: 2px; }
+
+/* Selection */
+::selection {
+  background: rgba(255, 107, 53, 0.22);
+  color: var(--text-primary);
+}
+
+/* ShineSlide FX */
+@keyframes shineSlide {
+  0%   { background-position: 200% center; }
+  100% { background-position: -200% center; }
+}
+
+@keyframes glowPulse {
+  0%, 100% { opacity: 0.45; transform: translate(-50%, -50%) scale(1); }
+  50%       { opacity: 0.75; transform: translate(-50%, -50%) scale(1.06); }
+}
