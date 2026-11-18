@@ -1,59 +1,53 @@
 # iNestSys Consulting — Web Platform
 
-Modern, high-performance web platform for **iNestSys Consulting**, showcasing enterprise infrastructure, zero-trust network modernization, and curated industry intelligence.
+> **Academic & Portfolio Project**  
+> Conceptual enterprise web platform designed and built with **Next.js 14**, **TypeScript**, **Three.js**, and **Tailwind CSS**.
 
 ---
 
-## 🌐 Live Cloud Deployment
+## 📸 Preview
 
-To view the live web platform online 24/7 without needing to run a local server:
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Foeudiredoli-dev%2Finestsys-consulting)
-
-> **Note on `localhost:3000` vs Live Cloud**:
-> `http://localhost:3000` is a local development address that only runs on your physical machine while `npm run dev` is actively running in your terminal. For 24/7 public access from anywhere (or to share with recruiters/clients), deploy directly to **Vercel** with the button above.
+![iNestSys Consulting Preview](public/demo-preview.png)
 
 ---
 
 ## ⚡ Key Features
 
-- **Actual Live Tech News**: Curated, verified technology news from leading sources (TechCrunch, The Verge, Wired, Ars Technica, MIT Tech Review) with working external article links and direct RSS feed integration.
-- **Company News & Insights**: Comprehensive iNestSys case studies, infrastructure whitepapers, and company announcements with an interactive full-screen reader modal and client takeaways.
-- **Interactive Visuals**: Three.js quantum mesh backgrounds, arc-aura effects, smooth Framer Motion page reveals, and responsive typography.
-- **Enterprise Contact & Consultation**: Built-in consultation request workflows.
+- **Actual Live Tech News**: Curated technology news from leading sources (TechCrunch, The Verge, Wired, Ars Technica) with dynamic article parsing and verified external source links.
+- **Company News & In-Depth Insights**: Case studies, zero-trust infrastructure whitepapers, and interactive full-article reader modal.
+- **3D Quantum Visuals**: Interactive Three.js particle mesh background, dynamic aura shaders, and smooth Framer Motion reveal animations.
+- **Enterprise Design System**: High-contrast cyber-corporate dark aesthetic tailored for digital systems and network consulting.
+
+---
 
 ## 🛠️ Tech Stack
 
 - **Framework**: Next.js 14 (App Router)
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
+- **3D Shaders & Mesh**: Three.js
 - **Animations**: Framer Motion
-- **3D Graphics**: Three.js
 
 ---
 
-## 💻 Local Development Setup
+## 💻 How to Run Locally
 
-To run and preview the project locally on your machine:
+This is a developer portfolio project. To clone and explore the codebase locally:
 
-### 1. Install Dependencies
+### 1. Clone the repository
+```bash
+git clone https://github.com/oeudiredoli-dev/inestsys-consulting.git
+cd inestsys-consulting
+```
+
+### 2. Install dependencies
 ```bash
 npm install
 ```
 
-### 2. Start the Local Server
+### 3. Start the development server
 ```bash
 npm run dev
 ```
 
-### 3. Open in Browser
-Once the terminal displays `Ready in ...ms`, navigate to:
-[http://localhost:3000](http://localhost:3000)
-
-*(Remember: `localhost:3000` is only available while the local terminal server is running).*
-
-### 4. Production Build
-```bash
-npm run build
-npm run start
-```
+The application will be compiled and accessible locally on your machine at `http://localhost:3000`.
